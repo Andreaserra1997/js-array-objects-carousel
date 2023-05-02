@@ -41,6 +41,14 @@
 	object-fit: cover;
 }
 
+.highlighted h3 {
+    display: none;
+}
+
+.highlighted p {
+    display: none;
+}
+
 .carousel .highlighted .active {
 	display: block;
 }
@@ -57,6 +65,11 @@
 	color: white;
 	font-size: 2rem;
 	z-index: 9;
+}
+
+.carousel .controls i {
+    cursor: pointer;
+
 }
 
 .thumbs img {

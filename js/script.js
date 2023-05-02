@@ -34,8 +34,12 @@ createdImage(arrImages, containerHighlighted, containerThumbs)
 function createdImage (arr, highlighted, thumbs) {
     for (let i = 0; i < arr.length; i++) {
         let img = arr[i];
-        highlighted.innerHTML += `<img src="${img.image}" alt="" class="${i == 0 ? 'active' : ''}">`;
-        thumbs.innerHTML += `<img src="${img.image}" alt="" class="${i == 0 ? 'active' : ''}">`;
+        highlighted.innerHTML += `
+        <img src="${img.image}" class="${i == 0 ? 'active' : ''}">
+        <h3 class="${i == 0 ? 'active' : ''}">${img.title}</h3>
+        <p class="${i == 0 ? 'active' : ''}">${img.text}</p>
+        `;
+        thumbs.innerHTML += `<img src="${img.image}" class="${i == 0 ? 'active' : ''}">`;
     }
 };
 
@@ -43,6 +47,9 @@ function createdImage (arr, highlighted, thumbs) {
 const listHighlighted = document.querySelectorAll('.highlighted img');
 // selezioniamo le miniature
 const listThumbs = document.querySelectorAll('.thumbs img');
+// selezioniamo il testo
+const textH3 = document.querySelector('.highlighted h3');
+const textP = document.querySelector('.highlighted h3');
 // selezioniamo i bottoni
 const btnPrev = document.querySelector('.btn-prev');
 const btnNext = document.querySelector('.btn-next');
