@@ -48,8 +48,8 @@ const listHighlighted = document.querySelectorAll('.highlighted img');
 // selezioniamo le miniature
 const listThumbs = document.querySelectorAll('.thumbs img');
 // selezioniamo il testo
-const textH3 = document.querySelector('.highlighted h3');
-const textP = document.querySelector('.highlighted h3');
+const textH3 = document.querySelectorAll('.highlighted h3');
+const textP = document.querySelectorAll('.highlighted p');
 // selezioniamo i bottoni
 const btnPrev = document.querySelector('.btn-prev');
 const btnNext = document.querySelector('.btn-next');
@@ -111,4 +111,15 @@ for (let i = 0; i < listThumbs.length; i++) {
 			listThumbs[activeIndex].classList.add('active');
 		}
 	)
-}
+};
+
+setInterval(() => {
+    listHighlighted[activeIndex].classList.remove('active');
+    listThumbs[activeIndex].classList.remove('active');
+    activeIndex++;
+    if (activeIndex >= listHighlighted.length) {
+        activeIndex = 0;
+    }
+    listHighlighted[activeIndex].classList.add('active');
+    listThumbs[activeIndex].classList.add('active');
+}, 4000);

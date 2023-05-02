@@ -43,10 +43,19 @@
 
 .highlighted h3 {
     display: none;
+    position: absolute;
+    bottom: 15%;
+    right: 21%;
+    color: white;
 }
 
 .highlighted p {
     display: none;
+    position: absolute;
+    bottom: 5%;
+    right: 21%;
+    color: white;
+    text-align: end;
 }
 
 .carousel .highlighted .active {
