@@ -64,6 +64,8 @@ btnNext.addEventListener('click',
 		// dall'immagine attiva tolgo la classe active
 		listHighlighted[activeIndex].classList.remove('active');
 		listThumbs[activeIndex].classList.remove('active');
+		textH3[activeIndex].classList.remove('active');
+		textP[activeIndex].classList.remove('active');
 		// settiamo il nuovo valore di active index
 		activeIndex++;
 		if (activeIndex >= listHighlighted.length) {
@@ -72,6 +74,8 @@ btnNext.addEventListener('click',
 		// alla nuova immagine attiva aggiungiamo la classe active
 		listHighlighted[activeIndex].classList.add('active');
 		listThumbs[activeIndex].classList.add('active');
+        textH3[activeIndex].classList.add('active');
+		textP[activeIndex].classList.add('active');
 	}
 );
 
@@ -80,6 +84,8 @@ btnPrev.addEventListener('click',
 		// dall'immagine attiva tolgo la classe active
 		listHighlighted[activeIndex].classList.remove('active');
 		listThumbs[activeIndex].classList.remove('active');
+        textH3[activeIndex].classList.remove('active');
+		textP[activeIndex].classList.remove('active');
 		// settiamo il nuovo valore di active index
 		activeIndex--;
 		if (activeIndex < 0) {
@@ -88,6 +94,8 @@ btnPrev.addEventListener('click',
 		// alla nuova immagine attiva aggiungiamo la classe active
 		listHighlighted[activeIndex].classList.add('active');
 		listThumbs[activeIndex].classList.add('active');
+        textH3[activeIndex].classList.add('active');
+		textP[activeIndex].classList.add('active');
 	}
 );
 
