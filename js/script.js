@@ -32,8 +32,6 @@ const containerThumbs = document.querySelector('.thumbs');
 createdImage(arrImages, containerHighlighted, containerThumbs)
 
 function createdImage (arr, highlighted, thumbs) {
-    highlighted.innerHTML= '';
-    thumbs.innerHTML='';
     for (let i = 0; i < arr.length; i++) {
         let img = arr[i];
         highlighted.innerHTML += `<img src="${img.image}" alt="" class="${i == 0 ? 'active' : ''}">`;

@@ -50,12 +50,12 @@
 	flex-direction: column;
 	justify-content: space-between;
 	position: absolute;
-	top: 15px;
-	bottom: 15px;
-	left: 50%;
+	top: 10px;
+	bottom: 10px;
+	left: 90%;
 	transform: translateX(-50%);
 	color: white;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	z-index: 9;
 }
 
