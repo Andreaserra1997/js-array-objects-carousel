@@ -116,10 +116,14 @@ for (let i = 0; i < listThumbs.length; i++) {
 setInterval(() => {
     listHighlighted[activeIndex].classList.remove('active');
     listThumbs[activeIndex].classList.remove('active');
+    textH3[activeIndex].classList.remove('active');
+	textP[activeIndex].classList.remove('active');
     activeIndex++;
     if (activeIndex >= listHighlighted.length) {
         activeIndex = 0;
     }
     listHighlighted[activeIndex].classList.add('active');
     listThumbs[activeIndex].classList.add('active');
+    textH3[activeIndex].classList.add('active');
+	textP[activeIndex].classList.add('active');
 }, 4000);
